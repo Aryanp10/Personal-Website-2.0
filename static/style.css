@@ -1,3 +1,9 @@
+/* @font-face {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 400;
+} */
+
 html{
     scroll-behavior: smooth;
 }
@@ -13,9 +19,14 @@ body{
     width: 100%;
     margin: 0 auto;
 }
-  
+  /* ibm-plex-serif-regular - latin */
+
 nav{
-    font-size: 17px;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    /* font-family: 'Varela', sans-serif; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-weight: 400px; */
+    font-size: 18px;
     text-align: center;
 }
   
@@ -33,7 +44,7 @@ nav li {
 }
   
 nav a {
-    color:  rgb(0, 0, 0);
+    color: #f7f7f7;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -47,11 +58,9 @@ nav a::before {
     display: block;
     height: 5px;
     background-color:rgb(0, 0, 0);
-  
     position: absolute;
     top: 0;
     width: 0%;
-  
     transition: all ease-in-out 250ms;
 }
   
@@ -59,10 +68,14 @@ nav a:hover::before {
     width: 55%;
 }
 
+nav .current{
+    font-weight: bold;
+}
+
 .header-box{
     border-radius: 100px;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.795);
+    /* background-color: rgba(255, 255, 255, 0.795); */
     width: 650px;
     float: center;
     margin: auto;
@@ -70,27 +83,72 @@ nav a:hover::before {
 
 }
 
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  } */
-
 #home{
     height: 972px;
     display: inline-block;
     width: 100%;
-    background-image: url("/images/space 2.jpeg");
+    background-image: url("/images/mountiainn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.home_description{
+  
+    padding: 140px;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    /* float: center; */
+}
+
+/* h1{
+    font-family: 'Arvo', serif;
+    font-size: 75px;
+    color: white;
+    text-align: left;
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 3s steps(12,end) forwards, blink 1s infinite;
+} */
+
+
+.home_header{
+    font-family: 'Arvo', serif;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    
+}
+.name{
+    font-size: 95px;
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 3s steps(12,end) forwards, blink 1s infinite;
+}
+
+@keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid rgb(0, 0, 0);
+    }
 }
 
 #about{
     height: 972px;
     display: inline-block;
     width: 100%;
-    background-color: rgb(218, 129, 129);
-
+    background-image: url("/images/mountiainn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #projects{
@@ -107,4 +165,41 @@ nav a:hover::before {
     width: 100%;
     background-color: rgb(54, 6, 6);
 
+}
+/* FOR LAPTOPS */
+@media screen and (max-width: 1500px){
+    #home{
+        height: 795px;
+        display: inline-block;
+        width: 100%;
+        background-image: url("/images/mountiainn.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #about{
+        height: 795px;
+        display: inline-block;
+        width: 100%;
+        background-image: url("/images/mountiainn.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    #projects{
+        height: 795px;
+        display: inline-block;
+        width: 100%;
+        background-color: rgb(194, 22, 22);
+    
+    }
+    
+    #contact{
+        height: 795px;
+        display: inline-block;
+        width: 100%;
+        background-color: rgb(54, 6, 6);
+    
+    }
 }
