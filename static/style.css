@@ -1,0 +1,110 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: rgb(146, 40, 40);
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+  
+nav{
+    font-size: 17px;
+    text-align: center;
+}
+  
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li {
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+}
+  
+nav a {
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  
+nav a:hover {
+    color:rgb(0, 0, 0);
+}
+  
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color:rgb(0, 0, 0);
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+    width: 55%;
+}
+
+.header-box{
+    border-radius: 100px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 650px;
+    float: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+
+#home{
+    height: 972px;
+    display: inline-block;
+    width: 100%;
+    background-image: url("/images/space 2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about{
+    height: 972px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(218, 129, 129);
+
+}
+
+#projects{
+    height: 972px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(194, 22, 22);
+
+}
+
+#contact{
+    height: 972px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(54, 6, 6);
+
+}
