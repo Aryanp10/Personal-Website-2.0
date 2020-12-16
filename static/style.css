@@ -14,18 +14,18 @@ body{
     background-color: rgb(146, 40, 40);
 }
 
-
-.container {
-    width: 100%;
-    margin: 0 auto;
+.header-box{
+    width: 650px;
+    text-align: center;
+    /* float: center; */
+    margin-top: 20px;
+    margin-left: 33%;
+    margin-right: auto;
+    position: fixed;
 }
-  /* ibm-plex-serif-regular - latin */
 
 nav{
-    /* font-family: Verdana, Geneva, sans-serif; */
-    /* font-family: 'Varela', sans-serif; */
     font-family: 'IBM Plex Sans', sans-serif;
-    /* font-weight: 400px; */
     font-size: 18px;
     text-align: center;
 }
@@ -63,28 +63,13 @@ nav a::before {
     width: 0%;
     transition: all ease-in-out 250ms;
 }
-  
-nav a:hover::before {
-    width: 55%;
-}
 
 nav .current{
     font-weight: bold;
 }
 
-.header-box{
-    border-radius: 100px;
-    position: relative;
-    /* background-color: rgba(255, 255, 255, 0.795); */
-    width: 650px;
-    float: center;
-    margin: auto;
-    margin-top: 20px;
-
-}
-
 #home{
-    height: 972px;
+    height: 1010px;
     display: inline-block;
     width: 100%;
     background-image: url("/images/mountiainn.jpg");
@@ -95,34 +80,19 @@ nav .current{
 
 .home_description{
   
-    padding: 140px;
+    padding: 260px;
     width: 33%;
     margin-left: auto;
     margin-right: auto;
     /* float: center; */
 }
 
-/* h1{
-    font-family: 'Arvo', serif;
-    font-size: 75px;
-    color: white;
-    text-align: left;
-    margin:0px;
-    white-space:nowrap;
-    overflow:hidden;
-    animation:typing 3s steps(12,end) forwards, blink 1s infinite;
-} */
 
-
-.home_header{
-    font-family: 'Arvo', serif;
-    font-size: 40px;
-    color: white;
-    text-align: left;
-    
-}
 .name{
+    font-family: 'Arvo', serif;
     font-size: 95px;
+    color: white;
+    /* padding-bottom: 20px; */
     margin:0px;
     white-space:nowrap;
     overflow:hidden;
@@ -142,8 +112,43 @@ nav .current{
     }
 }
 
+.words{
+    color: white;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    padding-bottom: 15px;
+}
+
+.social-menu{
+    margin-left: 29%;
+    float: center;
+    margin-right: auto;
+    /* margin-left: auto; */
+}
+
+.social-menu ul li {
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+
+}
+
+/* sizes and color */
+.social-menu ul li .fa {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 50px;
+    transition: .5s;
+}
+
+/* HOVERING */
+.social-menu ul li .fa:hover {
+    color: #172833;
+}
+
+
 #about{
-    height: 972px;
+    height: 1010px;
     display: inline-block;
     width: 100%;
     background-image: url("/images/mountiainn.jpg");
@@ -152,7 +157,7 @@ nav .current{
 }
 
 #projects{
-    height: 972px;
+    height: 1010px;
     display: inline-block;
     width: 100%;
     background-color: rgb(194, 22, 22);
@@ -160,7 +165,7 @@ nav .current{
 }
 
 #contact{
-    height: 972px;
+    height: 1010px;    
     display: inline-block;
     width: 100%;
     background-color: rgb(54, 6, 6);
@@ -168,13 +173,58 @@ nav .current{
 }
 /* FOR LAPTOPS */
 @media screen and (max-width: 1500px){
+    html{
+        font-size: small;
+    }
     #home{
-        height: 795px;
+        height: 830px;
         display: inline-block;
         width: 100%;
         background-image: url("/images/mountiainn.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .header-box{
+        width: 650px;
+        text-align: center;
+        float: center;
+        margin-top: 20px;
+        margin-left: 28%;
+        margin-right: auto;
+        position: fixed;
+    }
+
+    .home_description{
+        padding: 220px;
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        /* float: center; */
+    }
+
+    .name{
+        font-family: 'Arvo', serif;
+        font-size: 72px;
+        color: white;
+        margin:0px;
+        white-space:nowrap;
+        overflow:hidden;
+        animation:typing 3s steps(12,end) forwards, blink 1s infinite;
+    }
+
+    .words{
+        color: white;
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        padding-bottom: 1px;
+    }
+
+    .social-menu{
+        margin-left: 29%;
+        float: center;
+        margin-right: auto;
+        /* margin-left: auto; */
     }
 
     #about{
