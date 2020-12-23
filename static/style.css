@@ -144,19 +144,50 @@ nav .current{
 #about{
     /* height: 1010px; */
     height: 100vh;
-
     display: inline-block;
     width: 100%;
-    background: linear-gradient(to bottom, #14140D, #0d0e0d)
-    /* background-image: url("/images/mountiainn.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
+    background-color: #1B1C2B;
+    /* background: linear-gradient(to bottom, #14140D, #0d0e0d) */
+}
+ 
+.about_body{
+    margin-left:25%;
+    margin-right: 25%;
 }
 
+.about_header{
+    font-family: 'Lato', sans-serif;
+    color: #E94B3C;
+    font-size: 45px;
+    /* font-weight: 500px; */
+    margin-top: 110px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.about_description{
+    margin-top: 60px;
+}
+
+.circle_image{
+    border-radius: 50%;
+    float: left;
+    /* padding-righ; */
+    margin-right: 40px;
+
+}
+
+.aboutme{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    
+    /* padding-left: 10%; */
+    /* margin-left: 100px; */
+}
 #projects{
     /* height: 1010px; */
     height: 100vh;
-
     display: inline-block;
     width: 100%;
     background: linear-gradient(to bottom,#0d0e0d, #1D4264)
