@@ -114,7 +114,7 @@ nav .current{
 }
 
 .social-menu{
-    margin-left: 29%;
+    margin-left: 23%;
     float: center;
     margin-right: auto;
     /* margin-left: auto; */
@@ -142,12 +142,10 @@ nav .current{
 
 
 #about{
-    /* height: 1010px; */
-    height: 100vh;
+    min-height: 100vh;
     display: inline-block;
     width: 100%;
     background-color: #1B1C2B;
-    /* background: linear-gradient(to bottom, #14140D, #0d0e0d) */
 }
  
 .about_body{
@@ -159,7 +157,6 @@ nav .current{
     font-family: 'Lato', sans-serif;
     color: #E94B3C;
     font-size: 45px;
-    /* font-weight: 500px; */
     margin-top: 110px;
     margin-bottom: 5%;
     text-align: center;
@@ -172,22 +169,74 @@ nav .current{
 .circle_image{
     border-radius: 50%;
     float: left;
-    /* padding-righ; */
     margin-right: 40px;
-
 }
 
 .aboutme{
     font-family: 'Lato', sans-serif;
     color: white;
     font-size: 18px;
-    
-    /* padding-left: 10%; */
-    /* margin-left: 100px; */
 }
+
+.about_bottom{
+    /* padding: 5px 10px; */
+    font-size: 18px;
+    color: white;
+    /* background-color: rgb(255, 0, 0); */
+    /* text-align: center; */
+}
+
+
+.about_skills{
+    font-family: 'Lato', sans-serif;
+    width: 30%;
+    padding: 10px 10px;
+    float: left;
+    min-height: 45vh;
+}
+
+a.button {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(0, 238, 178);
+    text-decoration: none;
+    color: initial;
+    padding: 10px;
+    margin-left:auto;
+    margin-right: 20px;
+    width: 125px;
+}
+
+.about_button{
+    margin-left: auto;
+    margin-right: auto;
+    /* float: center; */
+    text-align: center;
+}
+
+.skills_title{
+    font-weight: bold;
+    color: #E94B3C;
+    font-size: larger;
+}
+
+.about_type{
+    font-weight: bold;
+    color: #6A6363;
+}
+
+.about_resume{
+    color: white;
+}
+
 #projects{
     /* height: 1010px; */
-    height: 100vh;
+    min-height: 100vh;
     display: inline-block;
     width: 100%;
     background: linear-gradient(to bottom,#0d0e0d, #1D4264)
@@ -195,8 +244,7 @@ nav .current{
 }
 
 #contact{
-    /* height: 1010px;     */
-    /* height: 100vh; */
+
     height: 300px;
 
     display: inline-block;
@@ -210,7 +258,7 @@ nav .current{
         font-size: small;
     }
     #home{
-        height: 100vh;
+        min-height: 100vh;
         /* 832 */
         display: inline-block;
         width: 100%;
@@ -262,7 +310,7 @@ nav .current{
     }
 
     #about{
-        height: 100vh;
+        min-height: 100vh;
         display: inline-block;
         width: 100%;
         /* background: linear-gradient(to left, #13120E, #222423) */
@@ -274,7 +322,7 @@ nav .current{
     }
     
     #projects{
-        height: 100vh;
+        min-height: 100vh;
         display: inline-block;
         width: 100%;
         /* background-color: white; */
@@ -284,7 +332,7 @@ nav .current{
     }
     
     #contact{
-        height: 300px;
+        min-height: 300px;
         display: inline-block;
         width: 100%;
         background-color: #136F63;
