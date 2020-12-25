@@ -9,13 +9,20 @@ body{
 }
 
 .header-box{
+    
+    /* float: center; */
+    /* margin-top: 20px;
+    margin-left: 33%; */
+    /* margin-right: auto; */
+    /* position: fixed; */
+    /* top: 50%;*/
     width: 650px;
     text-align: center;
-    /* float: center; */
-    margin-top: 20px;
-    margin-left: 33%;
-    margin-right: auto;
+    top: 5%;
+    float: none;
     position: fixed;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
 
 nav{
@@ -73,7 +80,6 @@ nav .current{
 
 
 .home_description{
-  
     padding: 350px;
     width: 33%;
     margin-left: auto;
@@ -87,10 +93,10 @@ nav .current{
     font-size: 95px;
     color: white;
     /* padding-bottom: 20px; */
-    margin:0px;
-    white-space:nowrap;
-    overflow:hidden;
-    animation:typing 5s steps(12,end) forwards, blink 1s infinite;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(12,end) forwards, blink 1s infinite;
 }
 
 @keyframes typing {
@@ -179,13 +185,17 @@ nav .current{
 }
 
 .about_bottom{
-    /* padding: 5px 10px; */
     font-size: 18px;
     color: white;
-    /* background-color: rgb(255, 0, 0); */
-    /* text-align: center; */
 }
 
+.about_overview{
+    font-family: 'Lato', sans-serif;
+    width: 30%;
+    padding: 10px 0;
+    float: left;
+    min-height: 45vh;
+}
 
 .about_skills{
     font-family: 'Lato', sans-serif;
@@ -195,6 +205,17 @@ nav .current{
     min-height: 45vh;
 }
 
+.about_other{
+    font-family: 'Lato', sans-serif;
+    width: 30%;
+    padding-left: 50px;
+    padding-top: 10px ;
+    /* padding: 10px 10px; */
+    float: left;
+    min-height: 45vh;
+}
+
+
 a.button {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -203,21 +224,19 @@ a.button {
     appearance: button;
     border-style: solid;
     border-radius: 10px;
-    background-color: rgb(0, 238, 178);
+    /* background-color: rgb(0, 238, 178); */
+    background-color: rgb(255, 196, 0);
+
     text-decoration: none;
     color: initial;
     padding: 10px;
     margin-left:auto;
     margin-right: 20px;
     width: 125px;
-}
-
-.about_button{
-    margin-left: auto;
-    margin-right: auto;
-    /* float: center; */
     text-align: center;
 }
+
+
 
 .skills_title{
     font-weight: bold;
@@ -259,22 +278,11 @@ a.button {
     }
     #home{
         min-height: 100vh;
-        /* 832 */
         display: inline-block;
         width: 100%;
         background-image: url("/images/mountiainn.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    .header-box{
-        width: 650px;
-        text-align: center;
-        float: center;
-        margin-top: 20px;
-        margin-left: 28%;
-        margin-right: auto;
-        position: fixed;
     }
 
     .home_description{
@@ -313,14 +321,28 @@ a.button {
         min-height: 100vh;
         display: inline-block;
         width: 100%;
-        /* background: linear-gradient(to left, #13120E, #222423) */
-        /* background-color: #13120E; */
-        background: linear-gradient(to bottom, #14140D, #0d0e0d)
-
-
-    
+        background-color: #1B1C2B;
     }
     
+    .about_header{
+        margin-top: 90px;
+        margin-bottom: 5%;
+        font-size: 40px;
+    }
+
+    .about_description{
+        margin-top: 50px;
+    }
+
+    .aboutme{
+        font-size: 16px;
+    }
+
+    .about_bottom{
+        font-size: 16px;
+        color: white;
+    }
+
     #projects{
         min-height: 100vh;
         display: inline-block;
