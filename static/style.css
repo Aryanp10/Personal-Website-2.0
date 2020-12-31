@@ -258,9 +258,25 @@ a.button {
     min-height: 100vh;
     display: inline-block;
     width: 100%;
-    background: linear-gradient(to bottom,#0d0e0d, #1D4264)
+    background-color: #798E8E;
 
 }
+
+.projects_body{
+    margin-left:25%;
+    margin-right: 25%;
+}
+
+.projects_header{
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-size: 45px;
+    margin-top: 110px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+
 
 #contact{
 
