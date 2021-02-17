@@ -271,8 +271,8 @@ a.button {
     font-family: 'Lato', sans-serif;
     color: #000000;
     font-size: 45px;
-    margin-top: 110px;
-    margin-bottom: 5%;
+    margin-top: 90px;
+    /* margin-bottom: 5%; */
     text-align: center;
 }
 
@@ -288,6 +288,11 @@ a.button {
     float: left;
 }
 
+.small_display :hover{
+    color:rgb(0, 0, 0);
+
+}
+
 .inside_small{
     width: 85%;
     height: 100%;
@@ -297,6 +302,7 @@ a.button {
     margin-left: auto;
     float: center;
 }
+
 
 .center{
     display: block;
@@ -316,6 +322,72 @@ a.button {
     font-weight: bold;
     text-align: center;
 }
+
+.large_display{
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    margin-top:19%;
+    width: 58%;
+    height: 42vh;
+    border-radius: 15px;
+    font-family: Lato;
+    /* padding-top: 2%; */
+}
+
+.project_gallery{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 90%;
+    width: 40%;
+    margin-left: 2%;
+    color: rgb(243, 0, 0);
+    transform: translate(0, 5%);
+    float: left;
+}
+
+.project_description{
+    /* background-color: red; */
+    float:right;
+    height: 90%;
+    width: 55%;
+    margin-right: 1.5%;
+    /* transform: translate(0, 1%); */
+    color: white;
+}
+
+.large_title{
+    font-size: 20px;
+    color: #FFB800;
+    font-weight: bolder;
+}
+
+.description_type{
+    font-size: large;
+}
+
+#Default{
+    display: block;
+}
+
+#Booking{
+    display: none;
+}
+
+#College{
+    display: none;
+}
+
+#Personal{
+    display: none;
+}
+
+#WebS{
+    display: none;
+}
+/* CONTACT */
+
 #contact{
     height: 300px;
     display: inline-block;
@@ -400,7 +472,7 @@ a.button {
         display: inline-block;
         width: 100%;
         /* background-color: white; */
-        background: linear-gradient(to bottom,#0d0e0d, #1D4264)
+        background: #798E8E;
 
         
     }
