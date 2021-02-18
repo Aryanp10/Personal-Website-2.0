@@ -288,12 +288,8 @@ a.button {
     float: left;
 }
 
-.small_display :hover{
-    color:rgb(0, 0, 0);
 
-}
-
-.inside_small{
+.inside_small, .inside_small_BDB{
     width: 85%;
     height: 100%;
     border-radius: 50px;
@@ -303,6 +299,21 @@ a.button {
     float: center;
 }
 
+.inside_small_BDB :hover{
+    width: 100%;
+    border-radius: 50px;
+    /* width: 85%; */
+    height: 100%;
+    background-color: rgba(136, 136, 136, 0.322)
+}
+
+.inside_small :hover{
+    width: 100%;
+    border-radius: 50px;
+    /* width: 85%; */
+    height: 94%;
+    background-color: rgba(136, 136, 136, 0.322)
+}
 
 .center{
     display: block;
@@ -324,6 +335,7 @@ a.button {
 }
 
 .large_display{
+    font-family: 'Lato' , sans-serif;
     background-color: rgb(0, 0, 0);
     margin-left: auto;
     margin-right: auto;
@@ -332,12 +344,14 @@ a.button {
     width: 58%;
     height: 42vh;
     border-radius: 15px;
-    font-family: Lato;
     /* padding-top: 2%; */
 }
 
-.project_gallery{
-    background-color: rgb(255, 255, 255);
+.project_galleryD{
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("/images/Booking\ Airline/01.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 15px;
     height: 90%;
     width: 40%;
@@ -345,6 +359,60 @@ a.button {
     color: rgb(243, 0, 0);
     transform: translate(0, 5%);
     float: left;
+}
+
+/* .project_gallery :hover{
+    background-color: rgba(255, 0, 0, 0.452);
+} */
+
+.project_galleryB{
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("/images/Booking\ Airline/01.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 90%;
+    width: 40%;
+    margin-left: 2%;
+    color: rgb(243, 0, 0);
+    transform: translate(0, 5%);
+    float: left;
+}
+
+
+.project_galleryC{
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("/images/Booking\ Airline/01.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 90%;
+    width: 40%;
+    margin-left: 2%;
+    color: rgb(243, 0, 0);
+    transform: translate(0, 5%);
+    float: left;
+}
+
+
+.project_galleryP{
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("/images/Booking\ Airline/01.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 90%;
+    width: 40%;
+    margin-left: 2%;
+    color: rgb(243, 0, 0);
+    transform: translate(0, 5%);
+    float: left;
+}
+
+
+.gallery_thumbnail{
+    width: 100%;
+
 }
 
 .project_description{
@@ -363,8 +431,10 @@ a.button {
     font-weight: bolder;
 }
 
-.description_type{
-    font-size: large;
+.pd_type{
+    font-size: 14px;
+    font-weight: bold;
+    color: #6A6363;
 }
 
 #Default{
@@ -484,3 +554,67 @@ a.button {
         background-color: #136F63;
     }
 }
+
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }

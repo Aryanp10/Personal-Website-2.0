@@ -196,8 +196,8 @@
 
             <div class="projects_box">
                 <div class="small_display" onclick="showBookingDB()">
-                    <div class="inside_small" >
-                        <img src= "/images/flyhigh-150x150.png" class="center">
+                    <div class="inside_small_BDB" >
+                        <img src= "/images/Booking Airline/flyhigh-150x150.png" class="center">
                     </div>
                     <p class="projects_box_title">
                         Booking Database WebApp
@@ -206,7 +206,7 @@
     
                 <div class="small_display" onclick="showCollegeBuddy()">
                     <div class="inside_small" >
-                        <img src= "/images/collegebuddy-125x125.png" class="center_cb">
+                        <img src= "/images/College Buddy/collegebuddy-125x125.png" class="center_cb">
                     </div>
                     <p class="projects_box_title">
                         College Buddy
@@ -215,7 +215,7 @@
     
                 <div class="small_display" onclick="showPersonalWeb()">
                     <div class="inside_small">
-                        <img src= "/images/personalwebsite-125x125.png" class="center_cb">                        
+                        <img src= "/images/Personal Website/personalwebsite-125x125.png" class="center_cb">                        
                     </div>
                     <p class="projects_box_title">
                         Personal Website
@@ -224,7 +224,7 @@
 
                 <div class="small_display" onclick="showWebScraper()">
                     <div class="inside_small">
-                        <img src= "/images/scraper-125x125.png" class="center_cb">                        
+                        <img src= "/images/Webscraper/scraper-125x125.png" class="center_cb">                        
 
                     </div>
                     <p class="projects_box_title">
@@ -236,23 +236,25 @@
         </div>
 
         <div class="large_display" id="Default">
-            DEFAULT
-        </div>
-
-        <div class="large_display" id="Booking">
-            <div class="project_gallery">
-                pictures go here
+            <div class="project_galleryD" data-modal-target="#modal">
+                <!-- <button >Open Modal</button> -->
+                
             </div>
             <div class="project_description">
                 <p class="large_title">
-                    Booking Database WebApp
+                    <div class="large_title">
+                        DEFAULT
+                        <span style="float: right; font-size: 13px;">
+                            Summer 2020
+                        </span>
+                    </div>
                 </p>
                 <p>
-                    <span class="about_type">Tools/Concepts Used:</span><br>
+                    <span class="pd_type">Tools/Concepts Used:</span><br>
                     Python, Postgres, SQL, HTML, CSS, JS, Threading, Transactions
                 </p>
                 <p>
-                    <span class="about_type">Description:</span><br>
+                    <span class="pd_type">Description:</span><br>
                     Created the UI design and laid out the overall structure 
                     of the website to give the user the best experience
     
@@ -264,7 +266,51 @@
     
                 </p>
                 <p>
-                    <span class="about_type">Links:</span><br>
+                    <span class="pd_type">Links:</span><br>
+                    <a href="https://www.youtube.com/watch?v=HEUSYASO_p">
+                        https://www.youtube.com/watch?v=HEUSYASO_pI
+                    </a>
+                    <br>
+                    <a href="github.com">
+                        github.com
+                    </a>
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="large_display" id="Booking">
+            <div class="project_galleryB">
+                <!-- <img class = "gallery_thumbnail" src="images/Booking Airline/01.png"> -->
+                
+            </div>
+            <div class="project_description">
+                <p class="large_title">
+                    <div class="large_title">
+                        Booking Database WebApp
+                        <span style="float: right; font-size: 13px;">
+                            Fall 2020
+                        </span>
+                    </div>
+                </p>
+                <p>
+                    <span class="pd_type">Tools/Concepts Used:</span><br>
+                    Python, Postgres, SQL, HTML, CSS, JS, Threading, Transactions
+                </p>
+                <p>
+                    <span class="pd_type">Description:</span><br>
+                    Created the UI design and laid out the overall structure 
+                    of the website to give the user the best experience
+    
+                    <br>
+                    <br>
+    
+                    Programmed features such as booking a flight, find status of a flight, 
+                    payments, direct/indirect flights
+    
+                </p>
+                <p>
+                    <span class="pd_type">Links:</span><br>
                     <a href="https://www.youtube.com/watch?v=HEUSYASO_p">
                         Youtube Demo
                     <br>
@@ -277,18 +323,24 @@
         </div>
 
         <div class="large_display" id="College">
-            <div class="project_gallery">
+            <div class="project_galleryC">
                 pictures go here
             </div>
             <div class="project_description">
                 <p class="large_title">
-                    College Buddy | 2nd Place Hackathon
+                    <div class="large_title">
+                        College Buddy | 2nd Place Hackathon
+                        <span style="float: right; font-size: 13px;">
+                            November 2020
+                        </span>
+                    </div>
                 </p>
                 <p>
-                    <span class="about_type">Tools/Concepts Used:</span><br>
-                    React, NodeJS, WebAPI, Web Scraping, HTML, CSS                </p>
+                    <span class="pd_type">Tools/Concepts Used:</span><br>
+                    React, NodeJS, WebAPI, Web Scraping, HTML, CSS                
+                </p>
                 <p>
-                    <span class="about_type">Description:</span><br>
+                    <span class="pd_type">Description:</span><br>
                     Collaborated with a team of 4 for 24hours to build web app that helps student save money
     
                     <br>
@@ -302,7 +354,7 @@
                     Built functions such as similarity level between, implemented web scraping of 200+ student discounts
                 </p>
                 <p>
-                    <span class="about_type">Links:</span><br>
+                    <span class="pd_type">Links:</span><br>
                     <a href="https://devpost.com/software/college-buddy">
                         DevPost Details
                     </a>
@@ -319,35 +371,40 @@
         </div>
 
         <div class="large_display" id="Personal">
-            <div class="project_gallery">
-                pictures go here
+            <div class="project_galleryP">
+                                
+
+               
             </div>
             <div class="project_description">
                 <p class="large_title">
-                    Booking Database WebApp
+                    <div class="large_title">
+                        Personal Website
+                        <span style="float: right; font-size: 13px;">
+                            Ongoing
+                        </span>
+                    </div>
                 </p>
                 <p>
-                    <span class="about_type">Tools/Concepts Used:</span><br>
-                    Python, Postgres, SQL, HTML, CSS, JS, Threading, Transactions
+                    <span class="pd_type">Tools/Concepts Used:</span><br>
+                    HTML, CSS, Javascript
                 </p>
                 <p>
-                    <span class="about_type">Description:</span><br>
-                    Created the UI design and laid out the overall structure 
-                    of the website to give the user the best experience
+                    <span class="pd_type">Description:</span><br>
+                    Revamped the whole website again beginning of Spring 2021 after initial release during Summer 2020 
     
                     <br>
                     <br>
     
-                    Programmed features such as booking a flight, find status of a flight, 
-                    payments, direct/indirect flights
-    
+                    Built to show case my skills and express my creativity through a personal portfolio
+                    
+                    <br>
+                    <br>
+
+                    Fully self taught through online resources and youtube videos
                 </p>
                 <p>
-                    <span class="about_type">Links:</span><br>
-                    <a href="https://www.youtube.com/watch?v=HEUSYASO_p">
-                        https://www.youtube.com/watch?v=HEUSYASO_pI
-                    </a>
-                    <br>
+                    <span class="pd_type">Links:</span><br>
                     <a href="github.com">
                         github.com
                     </a>
@@ -363,76 +420,26 @@
 
         
        
-        
+        <div class="modal" id="modal">
+            <div class="modal-header">
+            <div class="title">Example Modal</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+            </div>
+        </div>
+        <div id="overlay"></div>
     </div>
    
     <div id="contact">
         <h1>Contact PAGE</h1>
     </div>
 
-    <script>
-        function showBookingDB() {
-            div = document.getElementById('Booking');
-            if(div.style.display == "block"){
-				div.style.display = "none"
-                document.getElementById('Default').style.display = "block"
+    <script src="/js/script.js">
+        
 
-            }
-            else{
-                document.getElementById('Default').style.display = "none"
-                document.getElementById('College').style.display = "none"
-                document.getElementById('Personal').style.display = "none"
-                document.getElementById('WebS').style.display = "none"
-            	div.style.display="block"
-            }
-        }
 
-        function showCollegeBuddy() {
-            div = document.getElementById('College');
-            if(div.style.display == "block"){
-				div.style.display = "none"
-                document.getElementById('Default').style.display = "block"
-
-            }
-            else{
-                document.getElementById('Default').style.display = "none"
-                document.getElementById('Booking').style.display = "none"
-                document.getElementById('Personal').style.display = "none"
-                document.getElementById('WebS').style.display = "none"
-            	div.style.display="block"
-            }
-        }
-
-        function showPersonalWeb() {
-            div = document.getElementById('Personal');
-            if(div.style.display == "block"){
-				div.style.display = "none"
-                document.getElementById('Default').style.display = "block"
-
-            }
-            else{
-                document.getElementById('Default').style.display = "none"
-                document.getElementById('College').style.display = "none"
-                document.getElementById('Booking').style.display = "none"
-                document.getElementById('WebS').style.display = "none"
-            	div.style.display="block"
-            }
-        }
-
-        function showWebScraper() {
-            div = document.getElementById('WebS');
-            if(div.style.display == "block"){
-				div.style.display = "none"
-                document.getElementById('Default').style.display = "block"
-            }
-            else{
-                document.getElementById('Default').style.display = "none"
-                document.getElementById('College').style.display = "none"
-                document.getElementById('Personal').style.display = "none"
-                document.getElementById('Booking').style.display = "none"
-            	div.style.display="block"
-            }
-        }
     </script>
 </body>
 
