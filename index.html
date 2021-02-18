@@ -63,7 +63,7 @@
                 <p><b>Let me introduce myself</b></p>
             </div>
             <div class="about_description">
-                <img class="circle_image" src="/images/me-175x175.png" />
+                <img class="circle_image" src="/images/Logos/me-175x175.png" />
                 <span class="aboutme">
                     <p>
                         Hi! My name is <span style="color: rgb(255, 196, 0); font-weight:bold;">Aryan Parajulee</span>,
@@ -236,7 +236,7 @@
         </div>
 
         <div class="large_display" id="Default">
-            <div class="project_galleryD" data-modal-target="#modal">
+            <div class="project_galleryD" onclick="openModal();currentSlide(1)">
                 <!-- <button >Open Modal</button> -->
                 
             </div>
@@ -280,7 +280,7 @@
         </div>
 
         <div class="large_display" id="Booking">
-            <div class="project_galleryB">
+            <div class="project_galleryB" onclick="openModal();currentSlide(1)">
                 <!-- <img class = "gallery_thumbnail" src="images/Booking Airline/01.png"> -->
                 
             </div>
@@ -420,17 +420,44 @@
 
         
        
-        <div class="modal" id="modal">
-            <div class="modal-header">
-            <div class="title">Example Modal</div>
-            <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
-            </div>
-        </div>
-        <div id="overlay"></div>
+    
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="/images/Booking Airline/01.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="/images/Booking Airline/02.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="/images/Booking Airline/03.png" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="/images/Booking Airline/04.png" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      
     </div>
+  </div>   
+    </div>
+
    
     <div id="contact">
         <h1>Contact PAGE</h1>
