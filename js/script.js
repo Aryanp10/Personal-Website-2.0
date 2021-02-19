@@ -28,7 +28,7 @@ div.style.display = "none"
       document.getElementById('Default').style.display = "none"
       document.getElementById('College').style.display = "none"
       document.getElementById('Personal').style.display = "none"
-      document.getElementById('WebS').style.display = "none"
+      document.getElementById('FuelUp').style.display = "none"
     div.style.display="block"
   }
 }
@@ -44,7 +44,7 @@ div.style.display = "none"
       document.getElementById('Default').style.display = "none"
       document.getElementById('Booking').style.display = "none"
       document.getElementById('Personal').style.display = "none"
-      document.getElementById('WebS').style.display = "none"
+      document.getElementById('FuelUp').style.display = "none"
     div.style.display="block"
   }
 }
@@ -60,13 +60,13 @@ div.style.display = "none"
       document.getElementById('Default').style.display = "none"
       document.getElementById('College').style.display = "none"
       document.getElementById('Booking').style.display = "none"
-      document.getElementById('WebS').style.display = "none"
+      document.getElementById('FuelUp').style.display = "none"
     div.style.display="block"
   }
 }
 
-function showWebScraper() {
-  div = document.getElementById('WebS');
+function showFuelUp() {
+  div = document.getElementById('FuelUp');
   if(div.style.display == "block"){
 div.style.display = "none"
       document.getElementById('Default').style.display = "block"
