@@ -84,7 +84,7 @@ nav .current{
 
 .name{
     font-family: 'Arvo', serif;
-    font-size: 95px;
+    font-size: 90px;
     color: white;
     /* padding-bottom: 20px; */
     margin: 0px;
@@ -202,7 +202,7 @@ nav .current{
 .about_other{
     font-family: 'Lato', sans-serif;
     width: 30%;
-    padding-left: 50px;
+    padding-left: 0px;
     padding-top: 10px ;
     /* padding: 10px 10px; */
     float: left;
@@ -537,7 +537,7 @@ a.button {
 
     .name{
         font-family: 'Arvo', serif;
-        font-size: 72px;
+        font-size: 70px;
         color: white;
         margin:0px;
         white-space:nowrap;
@@ -605,7 +605,6 @@ a.button {
     
 
 }
-
 
 /* MODAL */
 
