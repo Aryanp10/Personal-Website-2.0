@@ -846,3 +846,35 @@ a.button {
 .closeFM :hover {
     color: #666;
 }
+
+@media screen and (max-width: 768px){
+    
+    html{
+        font-size: smaller;
+    }
+
+    #bg-modal {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .mmodal-contents {
+        height: 30%;
+        width:60%;
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        border-radius: 10px;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5rem;
+    }
+}
