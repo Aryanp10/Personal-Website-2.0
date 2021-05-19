@@ -63,7 +63,7 @@ nav .current{
 }
 
 #home{
-    height: 1010px;
+    height: 100vh;
     display: inline-block;
     width: 100%;
     /* background-color: black; */
@@ -78,11 +78,34 @@ nav .current{
     width: 33%;
     margin-left: auto;
     margin-right: auto;
-    /* float: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    float: center;
 }
 
 
+
 .name{
+
+
+    font-family: 'Arvo', serif;
+    font-size: 90px;
+    color: white;
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    /* margin-left: auto;
+    margin-right: auto;
+    float: center; */
+    
+    /* padding-bottom: 20px; */
+    /* margin: 0px; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* animation: typing 5s steps(12,end) forwards, blink 1s infinite; */
+}
+
+.nameAnimated{
     font-family: 'Arvo', serif;
     font-size: 90px;
     color: white;
@@ -542,6 +565,15 @@ a.button {
         margin:0px;
         white-space:nowrap;
         overflow:hidden;
+    }
+
+    .nameAnimated{
+        font-family: 'Arvo', serif;
+        font-size: 70px;
+        color: white;
+        margin:0px;
+        white-space:nowrap;
+        overflow:hidden;
         animation:typing 3s steps(12,end) forwards, blink 1s infinite;
     }
 
@@ -742,3 +774,75 @@ a.button {
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+/* // MODAL STARTS HERE // */
+
+
+#bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.mmodal-contents {
+	height: 25%;
+	width: 35%;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px 10px;
+    text-align: left;
+  }
+
+.closeFM {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	
+}
+
+.closeFM :hover {
+    color: #666;
+}

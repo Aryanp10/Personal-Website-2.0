@@ -6,6 +6,11 @@ var navbar = document.getElementsByClassName("nav_menu");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
+function close_function() {
+  document.getElementById("bg-modal").style.display = "none";
+  }
+
+
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
@@ -117,3 +122,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+// document.getElementById('button').addEventListener("click", function() {
+// 	document.querySelector('.bg-modal').style.display = "flex";
+// });
+
+// document.querySelector('.closeFM').addEventListener("click", function() {
+// 	document.querySelector('.bg-modal').style.display = "none";
+// });
+
