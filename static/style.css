@@ -877,4 +877,29 @@ a.button {
         font-family: 'Lato', sans-serif;
         font-size: 1.5rem;
     }
+
+    .name{
+        font-family: 'Arvo', serif;
+        font-size: 50px;
+        color: white;
+        margin:0px;
+        white-space:nowrap;
+        /* overflow:hidden; */
+    }
+
+    #home{
+        width: 100vh;
+    }
+
+    #about{
+        width: 100vh;
+    }
+
+    #projects{
+        width: 100vh;
+    }
+
+    #contact{
+        width: 100vh;
+    }
 }
